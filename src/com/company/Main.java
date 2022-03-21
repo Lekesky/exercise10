@@ -1,3 +1,8 @@
+// Leke Obayemi
+//exercise 10
+// 3/21/22
+
+
 package com.company;
 
 import java.util.ArrayList;
@@ -8,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         ContactCollection book = new ContactCollection();
 
-        for(ContactInfo a : book){
+        for(ContactInfo a : book){      //prints out each contact info in book
             System.out.println(a);
         }
     }
@@ -48,7 +53,7 @@ class ContactInfo{
     }
 }
 
-class ContactCollection implements Iterable<ContactInfo>{
+class ContactCollection implements Iterable<ContactInfo>{       //Class with contact info and is iterable
     ArrayList<ContactInfo> myContactCollection = new ArrayList<>();
 
     public ContactCollection() {
